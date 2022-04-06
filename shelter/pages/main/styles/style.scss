@@ -149,3 +149,39 @@ $color-dark-3xl: #292929;
 		text-decoration: none;
 	}
 }
+
+// ------------------------------------------------------------------------ About
+
+.about {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 58px;
+
+	&__image {
+		margin-top: 19px;
+	}
+
+	&__text {
+		max-width: 430px;
+		margin-left: -56px;
+	}
+
+	&__title {
+		max-width: 370px;
+		color: $color-dark-l;
+		font-family: 'Georgia';
+		font-size: 35px;
+		line-height: 130%;
+		letter-spacing: 0.06em;
+	}
+
+	&__info {
+		color: $color-dark-xl;
+		font-family: 'Arial';
+		font-size: 15px;
+		line-height: 160%;
+	}
+}
+
+// ------------------------------------------------------------------------
