@@ -151,11 +151,14 @@ $color-dark-3xl: #292929;
 	letter-spacing: 0.06em;
 	font-weight: 400;
 	margin-top: 25px;
+	color: $color-dark-3xl;
+	text-decoration: none;
+}
 
-	a {
-		color: $color-dark-3xl;
-		text-decoration: none;
-	}
+.button:hover {
+	cursor: pointer;
+	background-color: $color-light-s;
+	transition: all 0.3s ease;
 }
 
 // ------------------------------------------------------------------------ About
@@ -266,6 +269,7 @@ $color-dark-3xl: #292929;
 	-ms-transform: scale(1.12);
 	transform: scale(1.12);
 	cursor: pointer;
+
 	.pets__button {
 		background-color: $color-primary;
 	}

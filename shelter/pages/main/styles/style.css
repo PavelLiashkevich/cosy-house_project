@@ -111,10 +111,14 @@
   letter-spacing: 0.06em;
   font-weight: 400;
   margin-top: 25px;
-}
-.button a {
   color: #292929;
   text-decoration: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+  transition: all 0.3s ease;
 }
 
 .about {
