@@ -54,7 +54,7 @@ $color-dark-3xl: #292929;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 60px 0;
+	padding: 40px 0;
 
 	&__logo-name h1 {
 		color: $color-primary;
@@ -95,7 +95,7 @@ $color-dark-3xl: #292929;
 	&__link--active {
 		color: $color-light-s;
 		border-bottom: 3px solid $color-primary;
-		padding: 4px;
+		padding: 3px;
 	}
 }
 
@@ -127,7 +127,7 @@ $color-dark-3xl: #292929;
 		line-height: 130%;
 		color: $color-light-xl;
 		max-width: 310px;
-		margin-top: 163px;
+		margin-top: 183px;
 	}
 
 	&__subtitle {
@@ -296,7 +296,7 @@ $color-dark-3xl: #292929;
 .pets__button--down {
 	background: $color-primary;
 	border-radius: 100px;
-	padding: 15px 43px;
+	padding: 14px 43px;
 	color: $color-dark-3xl;
 	font-family: Georgia;
 	line-height: 130%;
@@ -526,7 +526,7 @@ $color-dark-3xl: #292929;
 		margin: 37px 0 1px 0;
 	}
 	&__title2 {
-		margin: 37px 0px 1px -3px;
+		margin: 37px 0px 2px -5px;
 	}
 }
 

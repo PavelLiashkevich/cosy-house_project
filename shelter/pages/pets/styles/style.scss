@@ -1,0 +1,108 @@
+@font-face {
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../../../assets/fonts/Georgia.ttf');
+}
+// Variables ------------------------------------------------------------------------
+
+$color-primary: #f1cdb3;
+$color-light-s: #fafafa;
+$color-light-l: #f6f6f6;
+$color-light-xl: #ffffff;
+$color-dark-s: #cdcdcd;
+$color-dark-m: #b2b2b2;
+$color-dark-l: #545454;
+$color-dark-xl: #4c4c4c;
+$color-dark-3xl: #292929;
+
+// ------------------------------------------------------------------------
+
+.bg {
+	&__wrapper {
+		background: $color-light-xl;
+		width: 100%;
+	}
+}
+
+.title {
+	font-family: 'Georgia';
+	font-size: 35px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	color: $color-dark-l;
+}
+
+// ------------------------------------------------------------------------ Container
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 40px;
+	width: 100%;
+}
+
+// ------------------------------------------------------------------------ Header
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__logo-name {
+		margin-top: 31px;
+	}
+
+	&__logo-name h1 {
+		font-family: 'Georgia';
+		font-size: 32px;
+		line-height: 110%;
+		letter-spacing: 0.06em;
+		color: $color-dark-l;
+	}
+
+	&__logo-description {
+		font-family: 'Arial';
+		font-size: 13px;
+		line-height: 15px;
+		letter-spacing: 0.1em;
+		color: $color-dark-3xl;
+		text-align: center;
+		margin-top: -12px;
+	}
+
+	&__nav {
+		margin-bottom: -11px;
+	}
+}
+
+.nav {
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		margin-left: 35px;
+		margin-top: 15px;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: $color-dark-s;
+		font-family: 'Arial';
+		font-size: 15px;
+		line-height: 160%;
+	}
+
+	&__link--active {
+		color: $color-light-s;
+		border-bottom: 3px solid $color-primary;
+		padding: 4px;
+	}
+}
+
+.list-reset {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}

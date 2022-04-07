@@ -28,7 +28,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 .header__logo-name h1 {
   color: #f1cdb3;
@@ -63,7 +63,7 @@
 .nav__link--active {
   color: #fafafa;
   border-bottom: 3px solid #f1cdb3;
-  padding: 4px;
+  padding: 3px;
 }
 
 .list-reset {
@@ -89,7 +89,7 @@
   line-height: 130%;
   color: #ffffff;
   max-width: 310px;
-  margin-top: 163px;
+  margin-top: 183px;
 }
 .not_only__subtitle {
   font-family: "Arial";
@@ -241,7 +241,7 @@
 .pets__button--down {
   background: #f1cdb3;
   border-radius: 100px;
-  padding: 15px 43px;
+  padding: 14px 43px;
   color: #292929;
   font-family: Georgia;
   line-height: 130%;
@@ -435,7 +435,7 @@
   margin: 37px 0 1px 0;
 }
 .question__title2 {
-  margin: 37px 0px 1px -3px;
+  margin: 37px 0px 2px -5px;
 }
 
 .footer__location1 {
