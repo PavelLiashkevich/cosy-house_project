@@ -43,6 +43,7 @@
   line-height: 15px;
   letter-spacing: 0.1em;
   font-family: "Arial";
+  margin-left: 4px;
 }
 
 .nav__list {
@@ -92,8 +93,6 @@
 }
 .not_only__subtitle {
   font-family: "Arial";
-  font-style: normal;
-  font-weight: 400;
   font-size: 15px;
   line-height: 160%;
   color: #cdcdcd;
@@ -242,7 +241,7 @@
   color: #292929;
   font-family: Georgia;
   line-height: 130%;
-  letter-spacing: 0.095em;
+  letter-spacing: 0.089em;
   border: 2px solid #f1cdb3;
   margin-top: 2px;
   transition: all 0.3s ease;
@@ -287,7 +286,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 59px auto 0 auto;
+  margin: 65px auto -6px auto;
 }
 
 .help__item--text {
@@ -296,4 +295,148 @@
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #545454;
+}
+
+.donation {
+  padding: 39px 28px 88px 0;
+}
+.donation__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.donation__image {
+  margin-top: 13px;
+  margin-left: 29px;
+}
+.donation__info {
+  margin-left: 30px;
+}
+.donation__info--title {
+  max-width: 300px;
+  margin-top: 24px;
+}
+.donation__info--subtitle {
+  font-family: "Georgia";
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin-top: -15px;
+}
+.donation__info--description {
+  font-family: "Arial";
+  font-style: italic;
+  font-size: 12px;
+  line-height: 18px;
+  color: #b2b2b2;
+  max-width: 380px;
+  margin-top: 20px;
+}
+
+.button__donation {
+  background: #f1cdb3;
+  border-radius: 9px;
+  border: 2px solid #f1cdb3;
+  position: relative;
+  width: 349px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.button__donation--number {
+  font-family: "Georgia";
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin-left: 52px;
+  text-decoration: none;
+}
+
+.button__donation::before {
+  width: 30px;
+  height: 23px;
+  position: absolute;
+  content: url(../../../assets/icons/credit-card.png);
+  margin-left: 7px;
+}
+
+.footer__wrapper {
+  padding-top: 20px;
+}
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__questions {
+  max-width: 302px;
+  min-height: 234px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__wait {
+  max-width: 302px;
+  min-height: 234px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__email, .footer__number, .footer__location1, .footer__location2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Georgia";
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #f1cdb3;
+}
+.footer__email::before {
+  content: url(../../../assets/icons/footer-section/mail.png);
+  padding-right: 20px;
+}
+.footer__number::before {
+  content: url(../../../assets/icons/footer-section/phone.png);
+  padding-right: 20px;
+}
+.footer__location1::before {
+  content: url(../../../assets/icons/footer-section/pin.png);
+  padding-right: 20px;
+}
+.footer__location2::before {
+  content: url(../../../assets/icons/footer-section/pin.png);
+  padding-right: 20px;
+}
+.footer__image {
+  margin-top: 20px;
+}
+
+.style__text {
+  font-family: "Georgia";
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.footer__number {
+  margin-bottom: 55px;
+}
+
+.question__title {
+  margin: 37px 0 1px 0;
+}
+.question__title2 {
+  margin: 37px 0px 1px -3px;
+}
+
+.footer__location1 {
+  margin-left: -5px;
+}
+.footer__location2 {
+  margin: 0px 0px 56px -6px;
 }/*# sourceMappingURL=style.css.map */

@@ -70,6 +70,7 @@ $color-dark-3xl: #292929;
 		line-height: 15px;
 		letter-spacing: 0.1em;
 		font-family: 'Arial';
+		margin-left: 4px;
 	}
 }
 
@@ -131,8 +132,6 @@ $color-dark-3xl: #292929;
 
 	&__subtitle {
 		font-family: 'Arial';
-		font-style: normal;
-		font-weight: 400;
 		font-size: 15px;
 		line-height: 160%;
 		color: $color-dark-s;
@@ -143,7 +142,7 @@ $color-dark-3xl: #292929;
 
 .button {
 	font-family: Georgia;
-	background: #f1cdb3;
+	background: $color-primary;
 	border-radius: 100px;
 	display: inline-block;
 	padding: 15px 45px;
@@ -154,7 +153,7 @@ $color-dark-3xl: #292929;
 	margin-top: 25px;
 
 	a {
-		color: #292929;
+		color: $color-dark-3xl;
 		text-decoration: none;
 	}
 }
@@ -200,7 +199,7 @@ $color-dark-3xl: #292929;
 // ------------------------------------------------------------------------ Pets
 
 .pets {
-	background: #f6f6f6;
+	background: $color-light-l;
 	width: 100%;
 	text-align: center;
 	padding: 36px 0px 100px 0px;
@@ -212,12 +211,13 @@ $color-dark-3xl: #292929;
 		margin: 59px -40px;
 	}
 }
+
 .slider__left,
 .slider__right {
 	position: relative;
 	width: 52px;
 	height: 52px;
-	border: 2px solid #f1cdb3;
+	border: 2px solid $color-primary;
 	box-sizing: border-box;
 	border-radius: 100px;
 	margin: 0 40px;
@@ -238,7 +238,7 @@ $color-dark-3xl: #292929;
 
 .slider__left:hover,
 .slider__right:hover {
-	background-color: #f1cdb3;
+	background-color: $color-primary;
 	cursor: pointer;
 }
 
@@ -267,7 +267,7 @@ $color-dark-3xl: #292929;
 	transform: scale(1.12);
 	cursor: pointer;
 	.pets__button {
-		background-color: #f1cdb3;
+		background-color: $color-primary;
 	}
 }
 
@@ -281,7 +281,7 @@ $color-dark-3xl: #292929;
 	line-height: 130%;
 	letter-spacing: 0.089em;
 	font-weight: 400;
-	border: 2px solid #f1cdb3;
+	border: 2px solid $color-primary;
 	transition: all 0.3s ease;
 }
 
@@ -290,14 +290,14 @@ $color-dark-3xl: #292929;
 }
 
 .pets__button--down {
-	background: #f1cdb3;
+	background: $color-primary;
 	border-radius: 100px;
 	padding: 15px 43px;
-	color: #292929;
+	color: $color-dark-3xl;
 	font-family: Georgia;
 	line-height: 130%;
-	letter-spacing: 0.095em;
-	border: 2px solid #f1cdb3;
+	letter-spacing: 0.089em;
+	border: 2px solid $color-primary;
 	margin-top: 2px;
 	transition: all 0.3s ease;
 }
@@ -321,6 +321,7 @@ $color-dark-3xl: #292929;
 		justify-content: center;
 		flex-direction: column;
 	}
+
 	&__title {
 		text-align: center;
 		max-width: 310px;
@@ -348,7 +349,7 @@ $color-dark-3xl: #292929;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 59px auto 0 auto;
+	margin: 65px auto -6px auto;
 }
 
 .help__item--text {
@@ -360,3 +361,176 @@ $color-dark-3xl: #292929;
 }
 
 // ------------------------------------------------------------------------ Donation
+
+.donation {
+	padding: 39px 28px 88px 0;
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__image {
+		margin-top: 13px;
+		margin-left: 29px;
+	}
+
+	&__info {
+		margin-left: 30px;
+	}
+
+	&__info--title {
+		max-width: 300px;
+		margin-top: 24px;
+	}
+
+	&__info--subtitle {
+		font-family: 'Georgia';
+		font-size: 15px;
+		line-height: 110%;
+		letter-spacing: 0.06em;
+		color: $color-dark-l;
+
+		margin-top: -15px;
+	}
+
+	&__info--description {
+		font-family: 'Arial';
+		font-style: italic;
+		font-size: 12px;
+		line-height: 18px;
+		color: $color-dark-m;
+		max-width: 380px;
+		margin-top: 20px;
+	}
+}
+
+.button {
+	&__donation {
+		background: $color-primary;
+		border-radius: 9px;
+		border: 2px solid $color-primary;
+		position: relative;
+		width: 349px;
+		height: 43px;
+		display: flex;
+		align-items: center;
+		margin-top: 20px;
+	}
+
+	&__donation--number {
+		font-family: 'Georgia';
+		font-size: 20px;
+		line-height: 115%;
+		letter-spacing: 0.06em;
+		color: $color-dark-l;
+		margin-left: 52px;
+		text-decoration: none;
+	}
+}
+
+.button__donation::before {
+	width: 30px;
+	height: 23px;
+	position: absolute;
+	content: url(../../../assets/icons/credit-card.png);
+	margin-left: 7px;
+}
+
+// ------------------------------------------------------------------------ Footer
+
+.footer {
+	&__wrapper {
+		padding-top: 20px;
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__questions {
+		max-width: 302px;
+		min-height: 234px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__wait {
+		max-width: 302px;
+		min-height: 234px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__email,
+	&__number,
+	&__location1,
+	&__location2 {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		text-decoration: none;
+		font-family: 'Georgia';
+		font-size: 20px;
+		line-height: 115%;
+		letter-spacing: 0.06em;
+		color: $color-primary;
+	}
+
+	&__email::before {
+		content: url(../../../assets/icons/footer-section/mail.png);
+		padding-right: 20px;
+	}
+
+	&__number::before {
+		content: url(../../../assets/icons/footer-section/phone.png);
+		padding-right: 20px;
+	}
+
+	&__location1::before {
+		content: url(../../../assets/icons/footer-section/pin.png);
+		padding-right: 20px;
+	}
+
+	&__location2::before {
+		content: url(../../../assets/icons/footer-section/pin.png);
+		padding-right: 20px;
+	}
+
+	&__image {
+		margin-top: 20px;
+	}
+}
+
+.style__text {
+	font-family: 'Georgia';
+	font-size: 35px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	color: $color-light-xl;
+}
+
+.footer__number {
+	margin-bottom: 55px;
+}
+
+.question {
+	&__title {
+		margin: 37px 0 1px 0;
+	}
+	&__title2 {
+		margin: 37px 0px 1px -3px;
+	}
+}
+
+.footer {
+	&__location1 {
+		margin-left: -5px;
+	}
+	&__location2 {
+		margin: 0px 0px 56px -6px;
+	}
+}
