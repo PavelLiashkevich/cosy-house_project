@@ -18,17 +18,11 @@ $color-dark-3xl: #292929;
 
 // ------------------------------------------------------------------------
 
-.bg {
-	&__wrapper {
-		background: -webkit-linear-gradient(
-			90deg,
-			rgb(91, 72, 58),
-			rgb(33, 31, 32)
-		);
-		background: -moz-linear-gradient(90deg, rgb(91, 72, 58), rgb(33, 31, 32));
-		background: linear-gradient(90deg, rgb(91, 72, 58), rgb(33, 31, 32));
-		width: 100%;
-	}
+.bg__wrapper {
+	background: -webkit-linear-gradient(90deg, rgb(91, 72, 58), rgb(33, 31, 32));
+	background: -moz-linear-gradient(90deg, rgb(91, 72, 58), rgb(33, 31, 32));
+	background: linear-gradient(90deg, rgb(91, 72, 58), rgb(33, 31, 32));
+	width: 100%;
 }
 
 .title {
@@ -45,7 +39,6 @@ $color-dark-3xl: #292929;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 40px;
-	width: 100%;
 }
 
 // ------------------------------------------------------------------------ Header

@@ -18,11 +18,15 @@ $color-dark-3xl: #292929;
 
 // ------------------------------------------------------------------------
 
-.bg {
-	&__wrapper {
-		background: $color-light-xl;
-		width: 100%;
-	}
+.bg__wrapper {
+	background: $color-light-xl;
+	width: 100%;
+}
+
+.bg__wrapper__footer {
+	background: -webkit-linear-gradient(90deg, rgb(91, 72, 58), rgb(33, 31, 32));
+	background: -moz-linear-gradient(90deg, rgb(91, 72, 58), rgb(33, 31, 32));
+	background: linear-gradient(90deg, rgb(91, 72, 58), rgb(33, 31, 32));
 }
 
 .title {
@@ -39,7 +43,6 @@ $color-dark-3xl: #292929;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 40px;
-	width: 100%;
 }
 
 // ------------------------------------------------------------------------ Header
@@ -48,9 +51,13 @@ $color-dark-3xl: #292929;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding-bottom: 30px;
 
 	&__logo-name {
 		margin-top: 31px;
+		a {
+			text-decoration: none;
+		}
 	}
 
 	&__logo-name h1 {
@@ -87,17 +94,22 @@ $color-dark-3xl: #292929;
 	}
 
 	&__link {
-		text-decoration: none;
-		color: $color-dark-s;
 		font-family: 'Arial';
 		font-size: 15px;
 		line-height: 160%;
+		color: $color-dark-l;
+		text-decoration: none;
+		margin-left: -2px;
 	}
 
 	&__link--active {
-		color: $color-light-s;
+		color: $color-dark-3xl;
 		border-bottom: 3px solid $color-primary;
 		padding: 4px;
+		font-family: 'Arial';
+		font-size: 15px;
+		line-height: 160%;
+		color: #292929;
 	}
 }
 
@@ -105,4 +117,240 @@ $color-dark-3xl: #292929;
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+// ------------------------------------------------------------------------ Our Pets
+
+.main {
+	background: $color-light-l;
+	padding-top: 46px;
+	padding-bottom: 101px;
+}
+
+.cards_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.pets--title {
+	font-family: 'Georgia';
+	font-size: 35px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	color: $color-dark-l;
+	text-align: center;
+	padding-bottom: 24px;
+}
+
+.pet {
+	&__card {
+		background: $color-light-s;
+		border-radius: 9px;
+		padding-bottom: 28px;
+		transition: all 0.3s ease;
+		margin-bottom: 30px;
+
+		&__title {
+			font-family: 'Georgia';
+			font-size: 20px;
+			letter-spacing: 0.065em;
+			color: $color-dark-l;
+			padding-top: 6px;
+			padding-bottom: 10px;
+			text-align: center;
+		}
+	}
+}
+
+.pet__card:hover {
+	-webkit-transform: scale(1.12);
+	-ms-transform: scale(1.12);
+	transform: scale(1.12);
+	cursor: pointer;
+
+	.pets__button {
+		background-color: $color-primary;
+	}
+}
+
+.pets__button {
+	padding: 15px 45px;
+	background: $color-light-s;
+	border-radius: 100px;
+	color: #292929;
+	font-family: Georgia;
+	display: inline-block;
+	line-height: 130%;
+	letter-spacing: 0.089em;
+	font-weight: 400;
+	border: 2px solid $color-primary;
+	transition: all 0.3s ease;
+	margin-left: 41px;
+}
+
+.pets__button:hover {
+	cursor: pointer;
+}
+
+.slider__control-wrapper {
+	display: flex;
+	width: 340px;
+	justify-content: space-between;
+	margin: auto;
+	margin-top: 29px;
+}
+
+.slider__button {
+	width: 52px;
+	height: 52px;
+	border: 2px solid $color-primary;
+	box-sizing: border-box;
+	border-radius: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Georgia;
+	font-size: 20px;
+	letter-spacing: 0.06em;
+	color: $color-dark-3xl;
+	cursor: pointer;
+	transition: all 0.3s ease;
+
+	&:hover {
+		background-color: $color-primary;
+	}
+}
+
+#prevPage:disabled,
+#firstPage:disabled,
+#lastPage:disabled,
+#nextPage:disabled {
+	cursor: auto;
+	border: 2px solid #cdcdcd;
+	color: #cdcdcd;
+	&:hover {
+		background-color: transparent;
+	}
+}
+
+.button__pages__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#currentPage {
+	font-family: Georgia;
+	font-size: 20px;
+	display: flex;
+	letter-spacing: 0.06em;
+	width: 52px;
+	height: 52px;
+	border: 2px solid #f1cdb3;
+	box-sizing: border-box;
+	border-radius: 100px;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	background-color: #f1cdb3;
+	color: #292929;
+}
+
+// ------------------------------------------------------------------------ Footer
+
+.footer {
+	&__wrapper {
+		padding-top: 20px;
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__questions {
+		max-width: 302px;
+		min-height: 234px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__wait {
+		max-width: 302px;
+		min-height: 234px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__email,
+	&__number,
+	&__location1,
+	&__location2 {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		text-decoration: none;
+		font-family: 'Georgia';
+		font-size: 20px;
+		line-height: 115%;
+		letter-spacing: 0.06em;
+		color: $color-primary;
+	}
+
+	&__email::before {
+		content: url(../../../assets/icons/footer-section/mail.png);
+		padding-right: 20px;
+	}
+
+	&__number::before {
+		content: url(../../../assets/icons/footer-section/phone.png);
+		padding-right: 20px;
+	}
+
+	&__location1::before {
+		content: url(../../../assets/icons/footer-section/pin.png);
+		padding-right: 20px;
+	}
+
+	&__location2::before {
+		content: url(../../../assets/icons/footer-section/pin.png);
+		padding-right: 20px;
+	}
+
+	&__image {
+		margin-top: 20px;
+	}
+}
+
+.style__text {
+	font-family: 'Georgia';
+	font-size: 35px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	color: $color-light-xl;
+}
+
+.footer__number {
+	margin-bottom: 55px;
+}
+
+.question {
+	&__title {
+		margin: 37px 0 1px 0;
+	}
+	&__title2 {
+		margin: 37px 0px 2px -5px;
+	}
+}
+
+.footer {
+	&__location1 {
+		margin-left: -5px;
+	}
+	&__location2 {
+		margin: 0px 0px 56px -6px;
+	}
 }
