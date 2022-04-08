@@ -57,6 +57,10 @@ $color-dark-3xl: #292929;
 		margin-bottom: 10px;
 	}
 
+	&__logo-name a {
+		text-decoration: none;
+	}
+
 	&__logo-description {
 		color: $color-light-xl;
 		font-size: 13px;
@@ -297,6 +301,10 @@ $color-dark-3xl: #292929;
 	border: 2px solid $color-primary;
 	margin-top: 2px;
 	transition: all 0.3s ease;
+	a {
+		text-decoration: none;
+		color: $color-dark-3xl;
+	}
 }
 
 .pets__button--down:hover {
