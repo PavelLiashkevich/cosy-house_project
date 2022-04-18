@@ -36,6 +36,9 @@
   align-items: center;
   padding-bottom: 30px;
 }
+.header__logo {
+  margin-right: 535px;
+}
 .header__logo-name {
   margin-top: 31px;
 }
@@ -305,4 +308,292 @@
 }
 .footer__location2 {
   margin: 0px 0px 56px -6px;
+}
+
+@media (max-width: 1279px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .header__nav {
+    margin-left: 44px;
+  }
+
+  .header__logo {
+    margin-right: 0;
+  }
+
+  .main {
+    padding-bottom: 77px;
+  }
+
+  .cards_container {
+    width: 580px;
+    margin: auto;
+    margin-top: -30px;
+  }
+
+  .item7,
+.item8 {
+    display: none;
+  }
+
+  .slider__control-wrapper {
+    margin-top: 9px;
+  }
+
+  .footer__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .question__title {
+    margin: 31px 0 3px 0;
+  }
+
+  .question__title2 {
+    margin: 32px 0px 33px -5px;
+  }
+
+  .footer__number {
+    margin-bottom: 38px;
+  }
+
+  .footer__location1 {
+    margin-left: -6px;
+    margin-right: 8px;
+  }
+
+  .footer__location2 {
+    margin: 28px 0px 41px -6px;
+  }
+
+  .footer__image {
+    margin-top: 22px;
+  }
+}
+.burger {
+  display: none;
+}
+
+.burger__body {
+  background: rgba(41, 41, 41, 0.6);
+  overflow: hidden;
+}
+
+.burger__logo {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+
+@media (max-width: 767px) {
+  .burger {
+    display: block;
+    width: 30px;
+    height: 22px;
+    background-image: url("../../../assets/icons/Burger-pets.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: absolute;
+    top: 49px;
+    right: 53px;
+    z-index: 100;
+  }
+
+  .burger__menu {
+    width: 320px;
+    height: 100vh;
+    background: #363535;
+    position: absolute;
+    top: 0;
+    right: -320px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    display: none;
+    z-index: 10;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    margin-top: 90px;
+  }
+
+  .burger__logo {
+    display: block;
+    margin-right: 99px;
+    margin-top: 30px;
+  }
+
+  .burger__menu--open {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+
+  @-webkit-keyframes slidein {
+    from {
+      right: -320px;
+    }
+    to {
+      right: 0px;
+    }
+  }
+
+  @keyframes slidein {
+    from {
+      right: -320px;
+    }
+    to {
+      right: 0px;
+    }
+  }
+  .burger__menu--close {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-name: slideClose;
+            animation-name: slideClose;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+
+  @-webkit-keyframes slideClose {
+    from {
+      right: 0px;
+    }
+    to {
+      right: -320px;
+    }
+  }
+
+  @keyframes slideClose {
+    from {
+      right: 0px;
+    }
+    to {
+      right: -320px;
+    }
+  }
+  .burger--click {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(90deg);
+  }
+
+  .burger--prev-click {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(0deg);
+  }
+
+  .logo__title {
+    font-family: "Georgia";
+    font-size: 32px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #f1cdb3;
+    margin-top: -30px;
+  }
+
+  .logo__title-main {
+    color: #f1cdb3;
+  }
+
+  .logo__subtitle {
+    font-family: "Arial";
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+  }
+
+  .nav__link {
+    margin-bottom: 0;
+    font-family: "Arial";
+    font-size: 32px;
+    line-height: 160%;
+    color: #cdcdcd;
+  }
+
+  .nav__link--active {
+    font-family: "Arial";
+    font-size: 32px;
+    line-height: 160%;
+    color: #fafafa;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .cards_container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pets--title {
+    font-size: 25px;
+    line-height: 130%;
+    padding-bottom: 47px;
+  }
+
+  .item4,
+.item5,
+.item6 {
+    display: none;
+  }
+
+  .main {
+    padding-top: 17px;
+    padding-bottom: 45px;
+  }
+
+  .slider__control-wrapper {
+    width: 300px;
+  }
+
+  .question__title {
+    font-size: 25px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+
+  .question__title2 {
+    font-size: 25px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin: 44px 0px 41px -5px;
+  }
+
+  .footer__number {
+    margin-bottom: -9px;
+    margin-left: 6px;
+  }
+
+  .footer__location1 {
+    margin-left: -3px;
+    margin-right: 3px;
+  }
+
+  .footer__location2 {
+    margin: 38px 0px 11px -2px;
+  }
+
+  .footer__image {
+    width: 260px;
+    margin-top: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */
