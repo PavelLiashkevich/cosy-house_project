@@ -1,2 +1,5 @@
-# pavelliashkevich-JSFE2022Q1
-Private repository for @pavelliashkevich
+# Project(HTML + SCSS + Adaptive)
+
+## Check it out 💻
+
+[Project](https://pavelliashkevich.github.io/cosy-house_project/shelter/pages/main/)
