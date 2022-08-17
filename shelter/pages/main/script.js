@@ -31,38 +31,3 @@ function burgerClick() {
 		burgerMenu.classList.remove('burger__menu--open');
 	}
 }
-
-/*<div class="pets__slider">
-
-			<div class="slider__left"></div>
-
-					<div class="pet__card">
-							<img
-								src="../../assets/images/pets-katrine.png"
-								alt="pets-katrine"
-							/>
-							<p class="pet__card__title">Katrine</p>
-							<button class="pets__button">Learn more</button>
-					</div>
-
-					<div class="pet__card pet__item2">
-							<img
-								src="../../assets/images/pets-jennifer.png"
-								alt="pets-katrine"
-							/>
-							<p class="pet__card__title">Jennifer</p>
-							<button class="pets__button">Learn more</button>
-						</div>
-
-						<div class="pet__card pet__item3">
-							<img
-								src="../../assets/images/pets-woody.png"
-								alt="pets-katrine"
-							/>
-							<p class="pet__card__title">Woody</p>
-							<button class="pets__button">Learn more</button>
-						</div>
-
-				<div class="slider__right"></div>
-
-		</div>*/

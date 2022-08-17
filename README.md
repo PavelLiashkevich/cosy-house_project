@@ -1,4 +1,4 @@
-# Project(HTML + SCSS + Adaptive)
+# Project(HTML + SCSS + JS + Adaptive)
 
 ## Check it out 💻
 
